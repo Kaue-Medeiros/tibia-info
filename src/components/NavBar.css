@@ -1,0 +1,11 @@
+.navbar {
+    background-color: red;
+    border: 1px solid black;
+    margin:5px;
+
+    width: 60vw;
+    height: 7vh;
+
+    display: flex;
+    justify-content: space-around;
+}
