@@ -7,7 +7,7 @@ import DisplayInfo from './components/DisplayInfo'
 // Função para buscar as informações do servidor selecionado no backend
 async function FetchFromServer(selectedWorld) {
   try {
-    const res = await fetch('http://localhost:3001/api');
+    const res = await fetch('http://localhost:3001/api/basic-info');
     const data = await res.json()
     return data[selectedWorld]
   }
@@ -19,9 +19,9 @@ async function FetchFromServer(selectedWorld) {
 
 function App() {
   // Cria os estados para armazenar o servidor selecionado, o nome do servidor e a guilda dominante
-  const [selectedWorld, setSelectedWorld] = useState('world-honbra');
-  const [serverName, setServerName] = useState('Honbra');
-  const [dominantGuild, setDominantGuild] = useState('Acesso Negado')
+  const [selectedWorld, setSelectedWorld] = useState('world-quelibra');
+  const [serverName, setServerName] = useState('Quelibra');
+  const [dominantGuild, setDominantGuild] = useState('Daycare')
 
   // Pega as informações do servidor selecionado e atualiza os estados serverName e dominantGuild
   FetchFromServer(selectedWorld).then(data => {
