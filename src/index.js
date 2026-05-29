@@ -4,12 +4,19 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
+import Imagem from './components/Imagem'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <App />
+  <>
+    <div style={{ display: 'flex', justifySelf: 'center' }}>
+      <Imagem src={require('./images/Tibia_Logo.png')} alt="Tibia Logo" />
+      <Imagem src={require('./images/Tibia_Info.png')} alt="Tibia Info" />
+    </div>
+    <App />
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
