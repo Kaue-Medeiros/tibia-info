@@ -3,10 +3,15 @@ import './SelectWorld.css'
 
 export default props => (
 
-
-    <select className="select-world">
-        <option value="world1">Quelibra</option>
-        <option value="world2">Honbra</option>
-        <option value="world3">Tornabra</option>
-    </select>
+    <div>
+        <select
+            className="select-world"
+            value={props.value || "world-honbra"}
+            onChange={props.onChange} /* Leva a responsabilidade do onChange para o componente pai (navBar) */
+        >
+            <option value="world-quelibra">Quelibra</option>
+            <option value="world-honbra">Honbra</option>
+            <option value="world-tornabra">Tornabra</option>
+        </select>
+    </div>
 )

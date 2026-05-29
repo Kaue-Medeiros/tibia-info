@@ -1,0 +1,16 @@
+.display-info {
+    background-color: blue;
+    border: 1px solid black;
+    margin:5px;
+
+    width: 60vw;
+    max-width: 60vw;
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.display-info div {
+    padding:20px;
+}
