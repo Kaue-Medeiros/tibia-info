@@ -12,6 +12,7 @@ export default props => (
             <option value="world-quelibra">Quelibra</option>
             <option value="world-honbra">Honbra</option>
             <option value="world-tornabra">Tornabra</option>
+            <option value="world-venebra">Venebra</option>
         </select>
     </div>
 )

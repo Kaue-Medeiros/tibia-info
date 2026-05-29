@@ -1,16 +1,26 @@
 .display-info {
-    background-color: blue;
-    border: 1px solid black;
+    color: white;
+    background-color: #d3d3d322;
     margin:5px;
 
     width: 60vw;
     max-width: 60vw;
-    height: 70vh;
+    height: fit-content;
+    max-height: 70vh;
 
     display: flex;
     justify-content: space-between;
+    border-radius: 5px;
 }
 
 .display-info div {
     padding:20px;
+    text-align: center;
 }
+
+span.server-important-info {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: greenyellow;
+}
+
